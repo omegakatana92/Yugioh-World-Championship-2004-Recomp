@@ -1,6 +1,6 @@
 [game]
-name = "Mobile Suit Gundam Seed - Battle Assault"
-short_name = "gundam_seed_ba"
+name = "Yu-Gi-Oh! - World Championship Tournament 2004"
+short_name = "ygo_wct2004"
 default_region = "USA"
 
 [bios]
@@ -8,8 +8,8 @@ default_region = "USA"
 path = "gba_bios.bin"
 
 [rom]
-path = "../../../games/Mobile Suit Gundam Seed - Battle Assault (USA).gba"
-sha1 = "8287d3d336d94a85c5cb22da0fd84918199197e1"
+path = "../../games/Yu-Gi-Oh! - World Championship Tournament 2004 (USA) (En,Ja,Fr,De,Es,It).gba"
+sha1 = "3A7FCEFFA1405640FE4606E006D272D1AF542F2B"
 
 [recompiler]
 entry_point = "0x08000000"
@@ -17,8 +17,8 @@ out_dir = "generated"
 strict = false
 
 [save]
-type = "eeprom"
+type = "sram"
 
 [runtime]
-debug_port = 19842
-window_title = "Gundam Seed - Battle Assault"
+debug_port = 19843
+window_title = "Yu-Gi-Oh! WCT 2004"

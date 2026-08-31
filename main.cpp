@@ -24,18 +24,18 @@ int main(int argc, char** argv) {
     set_default_environment("GBARECOMP_AUDIO_DIRECT", "0");
     set_default_environment("GBARECOMP_AUDIO_SHADOW", "0");
     set_default_environment("GBARECOMP_SELFHEAL_RECOMPILE", "0");
-    set_default_environment("GBARECOMP_FORCE_INTERP", "1");
+    set_default_environment("GBARECOMP_FORCE_INTERP", "0");
     set_default_environment("GBARECOMP_BIOS_HLE", "1");
     set_default_environment("GBARECOMP_NO_VSYNC", "1");
 
     gbarecomp::RunOptions options;
-    options.builtin_game_name = "GundamSeedBA";
-    options.builtin_rom_sha1 = "8287d3d336d94a85c5cb22da0fd84918199197e1";
-    options.mod_game_id = "gundam_seed_ba";
+    options.builtin_game_name = "YuGiOhWCT2004";
+    options.builtin_rom_sha1 = "3A7FCEFFA1405640FE4606E006D272D1AF542F2B";
+    options.mod_game_id = "ygo_wct2004";
     options.launcher_region = "USA";
     options.launcher_game_config = "game.toml";
-    options.launcher_rom_cache_filename = "gundam_rom.cfg";
-    options.launcher_bios_cache_filename = "gundam_bios.cfg";
-    options.launcher_save_path = "GundamSeedBA.sav";
+    options.launcher_rom_cache_filename = "ygo_rom.cfg";
+    options.launcher_bios_cache_filename = "ygo_bios.cfg";
+    options.launcher_save_path = "YuGiOhWCT2004.sav";
     return gbarecomp::run_game(argc, argv, options);
 }
