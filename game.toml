@@ -1,3 +1,13 @@
+[identity]
+sha1 = "3A7FCEFFA1405640FE4606E006D272D1AF542F2B"
+
+[program]
+name = "Yu-Gi-Oh! - World Championship Tournament 2004"
+id = "ygo_wct2004"
+load_address = 0x08000000
+size = 16777216
+entry_pc = 0x08000000
+
 [game]
 name = "Yu-Gi-Oh! - World Championship Tournament 2004"
 short_name = "ygo_wct2004"

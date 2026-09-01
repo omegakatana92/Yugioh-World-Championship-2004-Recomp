@@ -23,9 +23,9 @@ int main(int argc, char** argv) {
     set_default_environment("GBARECOMP_PRESENT_IN_PLACE", "0");
     set_default_environment("GBARECOMP_AUDIO_DIRECT", "0");
     set_default_environment("GBARECOMP_AUDIO_SHADOW", "0");
-    set_default_environment("GBARECOMP_SELFHEAL_RECOMPILE", "0");
-    set_default_environment("GBARECOMP_FORCE_INTERP", "0");
-    set_default_environment("GBARECOMP_BIOS_HLE", "1");
+    set_default_environment("GBARECOMP_SELFHEAL_RECOMPILE", "1");
+    set_default_environment("GBARECOMP_FORCE_INTERP", "1");
+    set_default_environment("GBARECOMP_BIOS_HLE", "0");
     set_default_environment("GBARECOMP_NO_VSYNC", "1");
 
     gbarecomp::RunOptions options;

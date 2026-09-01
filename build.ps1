@@ -24,12 +24,12 @@ if (-not $cmakePath) {
     throw "Native Windows CMake 3.20+ was not found. Install CMake or the Visual Studio C++ CMake tools, then run this script again."
 }
 
-$runtime = (Resolve-Path (Join-Path $root "../gbarecomp") -ErrorAction Stop).Path
+$runtime = (Resolve-Path (Join-Path $root "../Projects/gbarecomp") -ErrorAction Stop).Path
 $toml = (Resolve-Path (Join-Path $root "../tomlplusplus/include/toml++") -ErrorAction SilentlyContinue)
 $build = Join-Path $root $(if ($ninja -and $gcc -and $gxx) { "build-ninja" } else { "build-msvc" })
 $compilerBin = if ($gxx) { Split-Path $gxx.Source -Parent }
 $bios = Join-Path $env:USERPROFILE "Downloads/build-ninja/gba_bios.bin"
-$configureArgs = @("-S", $root, "-B", $build, "-DGBARECOMP_ROOT=$runtime")
+$configureArgs = @("-S", $root, "-B", $build, "-DGBARECOMP_ROOT=$runtime", "-DCMAKE_BUILD_TYPE=Release")
 if ($toml) {
     $configureArgs += "-DGBARECOMP_TOMLPP_INCLUDE_DIR=$($toml.Path)"
 }
